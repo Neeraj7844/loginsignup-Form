@@ -1,0 +1,183 @@
+/* Users Page */
+
+.users-container{
+
+  width: 100%;
+  min-height: 100vh;
+
+  padding: 50px 30px;
+
+  background:
+    linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)),
+    url("https://images.unsplash.com/photo-1497366754035-f200968a6e72?q=80&w=2070&auto=format&fit=crop");
+
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+/* Heading */
+
+.users-title{
+
+  text-align: center;
+
+  font-size: 42px;
+
+  font-weight: 700;
+
+  color: white;
+
+  margin-bottom: 40px;
+
+  letter-spacing: 1px;
+}
+
+/* User Grid */
+
+.users-grid{
+
+  display: grid;
+
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
+  gap: 30px;
+}
+
+/* Premium User Card */
+
+.user-card{
+
+  position: relative;
+
+  padding: 28px;
+
+  border-radius: 24px;
+
+  background: rgba(255,255,255,0.12);
+
+  border: 1px solid rgba(255,255,255,0.18);
+
+  backdrop-filter: blur(12px);
+
+  box-shadow:
+    0 8px 32px rgba(0,0,0,0.35);
+
+  overflow: hidden;
+
+  transition: 0.4s ease;
+}
+
+/* Glow Effect */
+
+.user-card::before{
+
+  content: "";
+
+  position: absolute;
+
+  top: -50%;
+
+  left: -50%;
+
+  width: 200%;
+
+  height: 200%;
+
+  background: linear-gradient(
+    45deg,
+    transparent,
+    rgba(255,255,255,0.08),
+    transparent
+  );
+
+  transform: rotate(25deg);
+
+  transition: 0.6s;
+}
+
+/* Hover Animation */
+
+.user-card:hover{
+
+  transform: translateY(-10px);
+
+  box-shadow:
+    0 18px 40px rgba(0,0,0,0.45);
+}
+
+.user-card:hover::before{
+
+  left: 100%;
+}
+
+/* User Name */
+
+.user-card h2{
+
+  color: white;
+
+  font-size: 26px;
+
+  margin-bottom: 18px;
+
+  font-weight: 600;
+}
+
+/* User Details */
+
+.user-card p{
+
+  color: rgba(255,255,255,0.85);
+
+  font-size: 15px;
+
+  margin-bottom: 12px;
+
+  line-height: 1.6;
+}
+
+/* Highlight Text */
+
+.user-card span{
+
+  color: #00c6ff;
+
+  font-weight: 600;
+}
+
+/* Status Badge */
+
+.status{
+
+  display: inline-block;
+
+  padding: 8px 14px;
+
+  border-radius: 30px;
+
+  background: rgba(0,255,136,0.18);
+
+  color: #00ff88;
+
+  font-size: 13px;
+
+  font-weight: 600;
+
+  margin-top: 12px;
+}
+
+/* Responsive */
+
+@media(max-width: 768px){
+
+  .users-title{
+
+    font-size: 32px;
+  }
+
+  .users-container{
+
+    padding: 35px 20px;
+  }
+}

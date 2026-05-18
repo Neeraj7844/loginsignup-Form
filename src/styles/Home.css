@@ -1,0 +1,227 @@
+/* Google Font */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* Global */
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Full Screen Container */
+
+.container{
+
+  width: 100%;
+  min-height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background:
+    linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+    url("https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=2070&auto=format&fit=crop");
+
+  background-size: cover;
+  background-position: center;
+
+  padding: 20px;
+}
+
+/* Premium Glassmorphism Card */
+
+.form-box{
+
+  width: 100%;
+  max-width: 430px;
+
+  padding: 45px 35px;
+
+  border-radius: 25px;
+
+  background: rgba(255,255,255,0.12);
+
+  border: 1px solid rgba(255,255,255,0.2);
+
+  backdrop-filter: blur(15px);
+
+  box-shadow:
+    0 8px 32px rgba(0,0,0,0.35);
+
+  transition: 0.4s ease;
+}
+
+/* Hover Effect */
+
+.form-box:hover{
+
+  transform: translateY(-6px);
+
+  box-shadow:
+    0 15px 40px rgba(0,0,0,0.45);
+}
+
+/* Heading */
+
+.form-box h1{
+
+  text-align: center;
+
+  color: white;
+
+  font-size: 38px;
+
+  margin-bottom: 35px;
+
+  font-weight: 700;
+
+  letter-spacing: 1px;
+}
+
+/* Form */
+
+.form-box form{
+
+  display: flex;
+  flex-direction: column;
+}
+
+/* Input Box */
+
+.form-box input{
+
+  width: 100%;
+
+  padding: 16px 18px;
+
+  margin-bottom: 20px;
+
+  border: 1px solid rgba(255,255,255,0.25);
+
+  border-radius: 14px;
+
+  background: rgba(255,255,255,0.08);
+
+  color: white;
+
+  font-size: 15px;
+
+  outline: none;
+
+  transition: 0.3s ease;
+}
+
+/* Placeholder */
+
+.form-box input::placeholder{
+
+  color: rgba(255,255,255,0.7);
+}
+
+/* Focus Effect */
+
+.form-box input:focus{
+
+  border-color: #ffffff;
+
+  background: rgba(255,255,255,0.12);
+
+  box-shadow:
+    0 0 12px rgba(255,255,255,0.35);
+}
+
+/* Button */
+
+.form-box button{
+
+  width: 100%;
+
+  padding: 15px;
+
+  border: none;
+
+  border-radius: 14px;
+
+  background: linear-gradient(135deg,#00c6ff,#0072ff);
+
+  color: white;
+
+  font-size: 17px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: 0.3s ease;
+
+  margin-top: 10px;
+}
+
+/* Button Hover */
+
+.form-box button:hover{
+
+  transform: scale(1.03);
+
+  background: linear-gradient(135deg,#0072ff,#00c6ff);
+
+  box-shadow:
+    0 10px 25px rgba(0,114,255,0.45);
+}
+
+/* Error Message */
+
+.error{
+
+  color: #ff4d4d;
+
+  text-align: center;
+
+  margin-bottom: 18px;
+
+  font-size: 14px;
+
+  font-weight: 500;
+}
+
+/* Extra Text */
+
+.form-footer{
+
+  text-align: center;
+
+  margin-top: 22px;
+
+  color: rgba(255,255,255,0.85);
+
+  font-size: 14px;
+}
+
+.form-footer span{
+
+  color: #00c6ff;
+
+  cursor: pointer;
+
+  font-weight: 600;
+}
+
+/* Responsive */
+
+@media(max-width: 500px){
+
+  .form-box{
+
+    padding: 35px 25px;
+  }
+
+  .form-box h1{
+
+    font-size: 30px;
+  }
+
+}
