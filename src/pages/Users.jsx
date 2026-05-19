@@ -37,7 +37,7 @@ function Users() {
 
       const response = await fetch(
 
-        "http://localhost:5000/users"
+        "https://full-stack-event-k59q.onrender.com/users"
 
       );
 

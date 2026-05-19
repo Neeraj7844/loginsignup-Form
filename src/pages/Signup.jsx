@@ -40,7 +40,7 @@ function Signup() {
 
       const response = await fetch(
 
-        "http://localhost:5000/register",
+        "https://full-stack-event-k59q.onrender.com/register",
 
         {
 
