@@ -10,7 +10,7 @@ import { useNavigate } from "react-router-dom";
 import "./../styles/Users.css";
 
 function Users() {
-
+ 
   const navigate = useNavigate();
 
   const [users, setUsers] = useState([]);
@@ -37,7 +37,7 @@ function Users() {
 
       const response = await fetch(
 
-        "https://full-stack-event-k59q.onrender.com/users"
+       "https://fullstack-3-sqha.onrender.com/users"
 
       );
 

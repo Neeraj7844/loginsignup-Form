@@ -40,7 +40,7 @@ function Signup() {
 
       const response = await fetch(
 
-        "https://full-stack-event-k59q.onrender.com/register",
+        "https://fullstack-3-sqha.onrender.com/register",
 
         {
 
