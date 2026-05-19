@@ -37,7 +37,7 @@ function Users() {
 
       const response = await fetch(
 
-       "https://fullstack-3-sqha.onrender.com/users"
+       "https://fullstack-3-sqha.onrender.com/cdusers"
 
       );
 

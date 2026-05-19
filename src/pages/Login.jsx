@@ -11,20 +11,15 @@ function Login() {
   const [error, setError] = useState("");
 
   const [formData, setFormData] = useState({
-
     email: "",
     pass: ""
-
   });
 
   const handleChange = (e) => {
 
     setFormData({
-
       ...formData,
-
       [e.target.name]: e.target.value
-
     });
 
   };
@@ -38,23 +33,16 @@ function Login() {
     try {
 
       const response = await fetch(
-
-        "https://fullstack-3-sqha.onrender.com/login",
-
+        "https://fullstack-3-sqha.onrender.com/api/users/login",
         {
-
           method: "POST",
 
           headers: {
-
             "Content-Type": "application/json"
-
           },
 
           body: JSON.stringify(formData)
-
         }
-
       );
 
       const result = await response.json();
@@ -112,9 +100,7 @@ function Login() {
           />
 
           <button type="submit">
-
             Login
-
           </button>
 
         </form>
@@ -124,9 +110,7 @@ function Login() {
           Don't have account ?
 
           <Link to="/">
-
             Signup
-
           </Link>
 
         </p>

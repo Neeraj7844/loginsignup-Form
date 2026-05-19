@@ -11,21 +11,16 @@ function Signup() {
   const [error, setError] = useState("");
 
   const [formData, setFormData] = useState({
-
     name: "",
     email: "",
     pass: ""
-
   });
 
   const handleChange = (e) => {
 
     setFormData({
-
       ...formData,
-
       [e.target.name]: e.target.value
-
     });
 
   };
@@ -39,23 +34,16 @@ function Signup() {
     try {
 
       const response = await fetch(
-
-        "https://fullstack-3-sqha.onrender.com/register",
-
+        "https://fullstack-3-sqha.onrender.com/api/users/register",
         {
-
           method: "POST",
 
           headers: {
-
             "Content-Type": "application/json"
-
           },
 
           body: JSON.stringify(formData)
-
         }
-
       );
 
       const result = await response.json();
@@ -119,9 +107,7 @@ function Signup() {
           />
 
           <button type="submit">
-
             Signup
-
           </button>
 
         </form>
@@ -131,9 +117,7 @@ function Signup() {
           Already have account ?
 
           <Link to="/login">
-
             Login
-
           </Link>
 
         </p>
